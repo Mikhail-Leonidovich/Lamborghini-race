@@ -1,0 +1,165 @@
+/* FONTS */
+
+@font-face {
+  font-family: "Impact", sans-serif;
+  src: url("../fonts/Impact.woff2") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* COMMON STYLES */
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto Condensed, sans-serif;
+  color: #040404;
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 400;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* HEADER */
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+
+/* NAV */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+
+/* MENU */
+
+.menu {
+  display: flex;
+  gap: 40px;
+  padding-top: 25px;
+}
+
+.menu_left {
+  margin-left: 25px;
+}
+
+.menu_right {
+  margin-right: 85px;
+}
+
+.menu__link {
+  color: #363636;
+  font-size: 16px;
+}
+
+.logo__img {
+  width: 83px;
+  height: 95.7px;
+}
+
+/* MAIN */
+
+.main {
+  flex-grow: 1;
+}
+
+/* PROMO */
+
+.promo {
+  background: url("/images/start-page-img.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.promo-inner {
+  padding-top: 97px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo-inner__title {
+  min-height: 80px;
+  font-family: Impact;
+  font-size: 76px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.52px;
+}
+
+.promo-inner__subtitle {
+  margin-top: 10px;
+  min-height: 60px;
+  font-family: Impact;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.promo-inner__data {
+  margin-top: 10px;
+  min-height: 35px;
+  font-family: Impact;
+  font-size: 34px;
+  font-weight: 400;
+  line-height: normal;
+  color: #9f6b08;
+}
+
+.promo-inner__line {
+  margin: 10px auto;
+  width: 386px;
+  height: 1px;
+  background-color: #040404;
+  border: none;
+}
+
+.promo-inner__place {
+  font-size: 16px;
+}
+
+.promo-inner__arrow {
+  margin-top: auto;
+  margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #000;
+  height: 400px;
+  width: 100%;
+}
